@@ -39,7 +39,7 @@ export default function Home() {
       {
 
         SearchFilter.map((product) => (
-          <ProductList product={product} onDelete={product.id} />
+          <ProductList product={product} onDelete={product.id} key={product.id} />
         ))
         
       }
