@@ -6,13 +6,32 @@ This is a full-stack e-commerce demo built as part of the internship assignment 
 
 ## How to run the project
 
-* clone the repository from github 
 - open visual studio code 
 - click on Clone Git Repository
 - click on Clone from Github
 - click the git file you wanted to clone
 - name a new folder or select folder for the clone file
 - after the clone is sucessful open the terminal
+- run ---> npm install
+- run ---> npm run dev
+
+## Step two on How to run the project
+
+* copy the code url in github
+- open visual studio code 
+- name a new folder or select folder for the clone file
+- open terminal 
+- run ---> clone git https://github.com/Sheriffuddeen09/geer-intern-assignment_backend.git
+- after the clone is sucessful open the terminal
+- run ---> npm install
+- run ---> npm run dev
+
+## Step three on How to run the project
+
+* download the zip code in github
+- extract the download zip
+- open visual studio code 
+- open terminal 
 - run ---> npm install
 - run ---> npm run dev
 
