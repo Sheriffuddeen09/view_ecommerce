@@ -8,7 +8,7 @@ export default function ProductList ({onDelete, product}){
     return(
 
         <main >
-            <div className=" border-orange-500 border py-1 px-1 sm:px-1 rounded-lg">
+            <div key={product.id} className=" border-orange-500 border py-1 px-1 sm:px-1 rounded-lg">
                 <Image src={`https://geer-intern-assignment-backend.onrender.com${product.imageUrl}`} alt={product.name} width={200} 
                 height={300} className="h-60  w-72 mx-auto rounded-tr-lg rounded-tl-lg"/>
                  <p className="text-sm font-bold mt-3 ">{product.name}</p>

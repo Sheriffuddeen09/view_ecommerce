@@ -89,7 +89,7 @@ export default function ProductDetails ({ params }){
     }
     const content = (
        <main >
-            <div className=" mt-4 sm:mt-10 py-2 px-4 sm:px-4 rounded-lg flex sm:flex-row flex-wrap sm:gap-10 justify-center ">
+            <div key={product.id} className=" mt-4 sm:mt-10 py-2 px-4 sm:px-4 rounded-lg flex sm:flex-row flex-wrap sm:gap-10 justify-center ">
                 <Image src={`https://geer-intern-assignment-backend.onrender.com${product.imageUrl}`} alt={product.name} width={200} 
                                 height={300} className="h-60  w-72 rounded-tr-lg rounded-tl-lg"/>
             <div className="px-4">
