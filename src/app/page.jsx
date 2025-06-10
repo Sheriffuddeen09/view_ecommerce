@@ -15,7 +15,7 @@ export default function Home() {
 
     const fetchProduct = () =>{
 
-       axios.get('http://localhost:5000/api/product').then(response => setProducts(response.data || []))
+       axios.get('https://view-backend-ecommerce.onrender.com/api/product').then(response => setProducts(response.data || []))
     }
 
     fetchProduct()

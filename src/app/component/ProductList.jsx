@@ -9,7 +9,7 @@ export default function ProductList ({onDelete, product}){
 
         <main >
             <div key={product.id} className=" border-orange-500 border py-1 px-1 sm:px-1 rounded-lg">
-                <Image src={`http://localhost:5000${product.imageUrl}`} alt={product.name} width={200} 
+                <Image src={`https://view-backend-ecommerce.onrender.com${product.imageUrl}`} alt={product.name} width={200} 
                 height={300} className="h-60  w-72 mx-auto rounded-tr-lg rounded-tl-lg"/>
                  <p className="text-sm font-bold mt-3 ">{product.name}</p>
                  <p className="text-sm font-bold mt-2 ">${product.price}</p>

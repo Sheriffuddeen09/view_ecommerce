@@ -92,7 +92,7 @@ export default function AddProduct ({handleToggle}) {
 
     try {
   const response = await axios.post(
-    "http://localhost:5000/api/product",
+    "https://view-backend-ecommerce.onrender.com/api/product",
     formFile,
     {
       headers: { "Content-Type": "multipart/form-data" },

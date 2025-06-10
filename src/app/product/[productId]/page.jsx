@@ -25,7 +25,7 @@ export default function ProductDetails ({ params }){
 
     useEffect(() =>{
 
-            axios.get('http://localhost:5000/api/product').then((res) =>{
+            axios.get('https://view-backend-ecommerce.onrender.com/api/product').then((res) =>{
                 const found = res.data.find((p) => String(p.id) === productId)
                 setProduct(found)
             })
@@ -36,7 +36,7 @@ export default function ProductDetails ({ params }){
 
         try{
             
-           const response = await axios.delete(`http://localhost:5000/api/product/${productId}`)
+           const response = await axios.delete(`https://view-backend-ecommerce.onrender.com/api/product/${productId}`)
            
              if (response.data) {
                 router.push('/')
@@ -102,19 +102,19 @@ export default function ProductDetails ({ params }){
        <main >
             <div key={product.id} className=" mt-4 sm:mt-2 py-2 px-4 sm:px-4 rounded-lg flex sm:flex-row flex-wrap sm:gap-10 justify-center ">
                 <div className={image === 1 ? "show-content" : "content"}>
-                <Image src={`http://localhost:5000${product.imageUrl}`} alt={product.name} width={200} 
+                <Image src={`https://view-backend-ecommerce.onrender.com${product.imageUrl}`} alt={product.name} width={200} 
                                 height={300} className="h-60  w-72 p-1 border-2 border-orange-600 sm:w-96 sm:h-72 rounded-lg"/>
                 </div>
                 <div className={image === 2 ? "show-content" : "content"}>
-                <Image src={`http://localhost:5000${product.imagetwo}`} alt={product.name} width={200} 
+                <Image src={`https://view-backend-ecommerce.onrender.com${product.imagetwo}`} alt={product.name} width={200} 
                                 height={300} className="h-60  w-72 p-1 border-2 border-orange-600 sm:w-96 sm:h-72 rounded-lg"/>
                 </div>
                 <div className={image === 3 ? "show-content" : "content"}>
-                <Image src={`http://localhost:5000${product.imagethree}`} alt={product.name} width={200} 
+                <Image src={`https://view-backend-ecommerce.onrender.com${product.imagethree}`} alt={product.name} width={200} 
                                 height={300} className="h-60  w-72 p-1 border-2 border-orange-600 sm:w-96 sm:h-72 rounded-lg"/>
                 </div>
                 <div className={image === 4 ? "show-content" : "content"}>
-                <Image src={`http://localhost:5000${product.imagefour}`} alt={product.name} width={200} 
+                <Image src={`https://view-backend-ecommerce.onrender.com${product.imagefour}`} alt={product.name} width={200} 
                                 height={300} className="h-60  w-72 p-1 border-2 border-orange-600 sm:w-96 sm:h-72 rounded-lg"/>
                 </div>
             <div className="px-4">
@@ -162,7 +162,7 @@ export default function ProductDetails ({ params }){
                 {[product.imageUrl, product.imagetwo, product.imagethree, product.imagefour].map((img, index) => (
                 <SwiperSlide key={index} className="!flex justify-center items-center">
                     <Image
-                    src={`http://localhost:5000${img}`}
+                    src={`https://view-backend-ecommerce.onrender.com${img}`}
                     alt={product.name}
                     width={144}
                     height={144}
