@@ -73,12 +73,15 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-  },
-  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
+  },plugins: [
+    require("tailwindcss-animate"),
+    require("tailwind-scrollbar"),
+  ],
   variants: {
-    // ...
-    scrollbar: ['dark']
-}
+    extend: {
+      scrollbar: ['rounded'], // optional: allow scrollbar to use border radius
+    }
+  }
 } satisfies Config
 
 export default config

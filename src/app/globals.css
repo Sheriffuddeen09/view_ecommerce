@@ -153,3 +153,56 @@
     }
     
   }
+
+  .show-content{
+      display: block;
+      width: 300px;
+      height: 300px;
+    }
+    .content{
+      display: none;
+    }
+      @media (min-width: 310px) {
+    table, tbody, tr, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      font-size: 10px;
+      width: 320px;
+    }
+    .scrollb{
+    scroll-snap-type: mandatory;
+    overflow-x: scroll;
+  }
+    .height-scrollbar{
+    height: 400px;
+  }
+    }
+
+      @media (min-width: 768px) {
+
+         table, tbody, tr, th, td{
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      font-size: 11px;
+      width: 800px;
+    }
+
+    .scrollb{
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
+
+  }
+  .height-scrollbar{
+    height: 550px;
+  }
+    }
+/* Reduce the size of Swiper arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 14px;
+  height: 14px;
+  font-size: 14px; /* Smaller arrow icon */
+  color: black; /* Optional: customize arrow color */
+}

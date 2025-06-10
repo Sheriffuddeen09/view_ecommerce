@@ -19,7 +19,10 @@
     "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^5.2.133",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-responsive-carousel": "^3.2.23",
+    "swiper": "^11.2.8",
+    "tailwind-scrollbar": "^4.0.2"
   },
   "devDependencies": {
     "@types/node": "^20",

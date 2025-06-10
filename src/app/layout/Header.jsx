@@ -26,7 +26,7 @@ export default function Header ({search, Addon, setSearch}) {
                 <Link className='hover:text-blue-700 transition duration-500 sm:text-sm text-xs' href={'/'}>Home</Link>
                 <button className='hover:text-blue-700 transition duration-500 sm:text-sm text-xs' onClick={handleToggle}>Add Product</button>
             </nav>
-            <div className={` fixed top-0 flex justify-center items-center w-full h-full bg-product left-0 ${toggle ? "block" : "hidden"}`}>
+            <div className={`z-10 fixed top-0 flex justify-center items-center w-full h-full bg-product left-0 ${toggle ? "block" : "hidden"}`}>
                 <AddProduct handleToggle={handleToggle} Addon={Addon} />
             </div>
         </header>
